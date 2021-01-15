@@ -1,17 +1,17 @@
 import React from 'react'
 import "./screen.css"
 
-function Screen(props) {
+function Screen({state}) {
     return (
         <div id="screenContainer">
             <div className="screenDivs" id="previous">
-                <p>{props.values.prevValue}</p>
+                <p>{state.prevValue}</p>
             </div>
             <div className="screenDivs" id="operation">
-                <p>{props.values.operator}</p>
+                <p>{state.operator}</p>
             </div>
             <div className="screenDivs" id="current">
-                <p>{props.values.curValue}</p>
+                <p>{state.curValue}</p>
             </div>
         </div>
     )
